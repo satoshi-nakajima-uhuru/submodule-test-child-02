@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alert Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <button id="confirmButton">Show Alert</button>
+</body>
+
+<script>
+  document.getElementById('confirmButton').addEventListener('click', function () {
+    var result = window.confirm('本当に削除しますか？');
+    if (result) {
+      alert('OKが選択されました。');
+    } else {
+      alert('キャンセルが選択されました。');
+    }
+  });
+</script>
+
+</html>
